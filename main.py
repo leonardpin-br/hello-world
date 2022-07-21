@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 r"""Entry point of this script/app.
 
-Last modified in 2022-07-22
+Last modified in 2022-07-21
 
-Python version 2.7.9 (McNeel Rhinoceros 7)
+Python versions 2.7.8 and 2.7.9 (McNeel Rhinoceros 6 and 7 respectively)
 
 Example:
-    How a shelf button can be written::
+    How a tab button can be written::
 
         !-RunPythonScript "E:\cloud\Backup\Libraries\scripts\rhinoceros\hello-world\hello_world.py"
 
@@ -31,6 +31,10 @@ import rhinoscriptsyntax as rs
 def main():
     u"""The main function to execute the entire project/application.
     """
+
+    # Clears the command history.
+    rs.ClearCommandHistory()
+
     print("Hello, World!\n\nRunning on Python version:\n" + sys.version)
 
 
